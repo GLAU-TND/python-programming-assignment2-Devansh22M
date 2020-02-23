@@ -1,0 +1,8 @@
+from itertools import permutations
+lst = eval(input())
+r = []
+for i in permutations(lst):
+    if all([i[j - 1][-1] == i[j][0] for j in range(len(i))]):
+        r.extend(i)
+        break
+print(r)
