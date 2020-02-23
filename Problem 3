@@ -4,7 +4,7 @@ m, c = 0, 0
 for i in b:
     if i == '1':
         c += 1
-    if i == '0':
+    else:
         c = 0
     if m < c:
         m = c
